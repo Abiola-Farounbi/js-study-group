@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resuable code</title>
+    </head>
+    <body>
+        <script>
+            //1
+            function logHi(){
+                console.log("hi");
+            }
+            //logHi()
+            //2
+            function alertHi(){
+                alert('hi')
+            }
+            //alertHi()
+            //3
+            function checkFirst(){
+                if (confirm("do you want a hi")){
+                    alert("hi")
+                }
+            }
+            //checkFirst()
+            //4
+            function askName(){
+                const name=prompt("please enter your name");
+                alert("hi"+ name)
+                }
+            //askName()
+            //5
+            function getUsername(){
+                return "myusername"
+            }
+            //console.log(getUsername())
+            //6
+            username=getUsername()
+            //console.log(username)
+            //7
+            function getFullName(first,last){
+                  return(first+" "+last)   
+               }
+               //console.log(getFullName('abiola','esther'))
+            //9
+            function askFullName(){
+               const  first=prompt("first name")
+                const last=prompt("last name")
+                return(first+"  "+ last)
+            }
+            //console.log(askFullName())
+            //11
+            function login(){
+                const password=prompt("enter a password")
+                if (password==='password'){
+                    alert("thank you! you are logged in");
+                    return true;
+                }
+                else {
+                    alert('incorrect,please try again!');
+                    return false;
+                }
+            }
+           // console.log(login())
+         
+        //13
+        function init(){
+            loggedIn=login()
+        }
+         console.log(loggedIn)
+         init()
+         //14
+        </script> 
+    </body>
+</html>
