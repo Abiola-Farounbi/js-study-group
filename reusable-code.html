@@ -4,6 +4,7 @@
         <title>Resuable code</title>
     </head>
     <body>
+        <p><h1> RESUSABLE CODE EXERCISES</h1></p>
         <script>
             //1
             function logHi(){
@@ -52,6 +53,35 @@
             function login(){
                 const password=prompt("enter a password")
                 if (password==='password'){
+                      alert("thank you! you are logged in");
+                      return true;
+                  }
+                   else {
+                     alert('incorrect,please try again!');
+                     return false;
+                }
+            }
+                // console.log(login())
+         
+        //13
+        function init(){
+            loggedIn=login()
+        }
+        // console.log(loggedIn)
+         //init()
+         //18
+         function getMyLinkMarkup( title, url ){
+            return "<a href="+ url +"> " +title + "</a>"
+         }
+         //console.log(getMyLinkMarkup( "abiola portfolio", "abiola portfolio.com" ))
+         //26
+         function getTaxes(price){
+             return price*0.05
+         }
+         //console.log(getTaxes(500))
+         //30
+        const login=()=>{const password=prompt("enter a password")
+                if (password==='password'){
                     alert("thank you! you are logged in");
                     return true;
                 }
@@ -59,16 +89,8 @@
                     alert('incorrect,please try again!');
                     return false;
                 }
-            }
-           // console.log(login())
-         
-        //13
-        function init(){
-            loggedIn=login()
-        }
-         console.log(loggedIn)
-         init()
-         //14
+        };
+        login()
         </script> 
     </body>
 </html>
